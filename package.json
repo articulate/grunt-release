@@ -1,0 +1,43 @@
+{
+  "name": "grunt-release",
+  "description": "Version management of GruntJS libraries",
+  "version": "0.1.0",
+  "homepage": "https://github.com/articulate/grunt-release",
+  "author": {
+    "name": "Andrew Nordman",
+    "email": "anordman@articulate.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/articulate/grunt-release.git"
+  },
+  "bugs": {
+    "url": "https://github.com/articulate/grunt-release/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/articulate/grunt-release/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
