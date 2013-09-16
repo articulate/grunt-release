@@ -30,7 +30,8 @@ module.exports = (grunt) ->
 
   determineVersion = (options) ->
     unless grunt.option('currentVersion')
-      grunt.option('currentVersion', grunt.config(['pkg', 'version']))
+      version = grunt.file.readJSON('package.json')['version']
+      grunt.option('currentVersion', version)
 
     unless grunt.option('newVersion')
       [major, minor, patch] = grunt.option('currentVersion').split('.')
@@ -70,7 +71,7 @@ module.exports = (grunt) ->
           callback(null)
 
   updatePackage = () ->
-    pkg = grunt.config('pkg')
+    pkg = grunt.config('pkg') || grunt.file.readJSON('package.json')
     grunt.log.writeln "Updating package.json version to #{grunt.option('newVersion')}..."
     pkg.version = grunt.option('newVersion')
     grunt.file.write './package.json', JSON.stringify(pkg, undefined, 2)
