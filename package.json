@@ -1,6 +1,6 @@
 {
   "name": "grunt-release",
-  "description": "Version management of GruntJS libraries",
+  "description": "Manage version releases of your libraries/applications",
   "version": "0.1.0",
   "homepage": "https://github.com/articulate/grunt-release",
   "author": {
@@ -17,7 +17,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/articulate/grunt-release/blob/master/LICENSE-MIT"
+      "url": "https://github.com/articulate/grunt-release/blob/master/LICENSE"
     }
   ],
   "main": "Gruntfile.js",

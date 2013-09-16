@@ -1,6 +1,6 @@
 # grunt-release
 
-> Version management of GruntJS libraries
+> Manage version releases of your libraries/applications
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
