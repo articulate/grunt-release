@@ -30,6 +30,11 @@ module.exports = (grunt) ->
         src: '**/*.coffee'
         dest: '.'
         ext: '.js'
+
+    release:
+      github:
+        options:
+          repo: 'articulate/grunt-release'
     
 
   grunt.loadTasks 'tasks'
