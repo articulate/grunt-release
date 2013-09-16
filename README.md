@@ -19,7 +19,18 @@ grunt.loadNpmTasks('grunt-release');
 
 ## The "release" task
 
-### Overview
+
+Release handles version management of your library or application via GruntJS. It is configured to
+do the following things:
+
+  1. Update package.json with new version number
+  2. Generate a CHANGELOG entry for the new version (using GitHub PRs merged since last version)
+  3. Commit the package.json and CHANGELOG changes
+  4. Tag the new commit as the new version
+  5. Push the commit and the tags to your repository
+
+Configuration options are in place for where to push to, including remote name and branch.
+
 In your project's Gruntfile, add a section named `release` to the data object passed into `grunt.initConfig()`.
 
 ```js
