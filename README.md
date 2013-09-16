@@ -64,9 +64,11 @@ In this example, the default options are used to do something with whatever. So 
 ```js
 grunt.initConfig({
   release: {
-    options: {
-      repo: 'github/hubot'   
-    },
+    github: {
+      options: {
+        repo: 'github/hubot'   
+      }
+    }
   },
 })
 ```
@@ -77,10 +79,12 @@ If you happen to have different branches that need updating, you can configure t
 ```js
 grunt.initConfig({
   release: {
-    options: {
-      repo: 'cadwallion/factory-worker',
-      remote: 'cadwallion',
-      branch: 'releases'
+    github: {
+      options: {
+        repo: 'cadwallion/factory-worker',
+        remote: 'cadwallion',
+        branch: 'releases'
+      }
     }
   },
 })
